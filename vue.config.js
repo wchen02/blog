@@ -3,6 +3,6 @@ module.exports = {
     name: 'Wensheng Chen'
   },
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/my-blog/'
+    ? '/blog/'
     : '/'
 }

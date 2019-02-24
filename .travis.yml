@@ -11,3 +11,5 @@ deploy:
   on:
     branch: master
   local-dir: dist
+  fqdn: blog.wenshengchen.com
+  project-name: Wensheng Chen's Blog
