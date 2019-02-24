@@ -1,5 +1,5 @@
-# Wensheng Chen's personal site
-[![Build Status](https://travis-ci.com/wchen02/wenshengchen.svg?branch=master)](https://travis-ci.com/wchen02/wenshengchen)
+# Wensheng Chen's Blog
+[![Build Status](https://travis-ci.com/wchen02/my-blog.svg?branch=master)](https://travis-ci.com/wchen02/my-blog)
 
 ## Project setup
 ```
