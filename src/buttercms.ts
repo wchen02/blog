@@ -1,3 +1,3 @@
 import Butter from 'buttercms';
-const butter = Butter('$BUTTERCMS_API_TOKEN');
+const butter: ButterStatic = Butter('$BUTTERCMS_API_TOKEN');
 export default butter;
