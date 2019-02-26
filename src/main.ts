@@ -9,5 +9,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+// tslint:disable-next-line: ter-arrow-parens
   render: (h) => h(App),
 }).$mount('#app');
