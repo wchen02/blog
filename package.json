@@ -12,6 +12,8 @@
     "clean": "rm -rf dist && rm -rf node_modules"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.13",
     "buttercms": "^1.1.4",
     "register-service-worker": "^1.5.2",
     "tslint-config-airbnb": "^5.11.1",
@@ -22,6 +24,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "tslint-config-airbnb": "^5.11.1",
+    "@types/bootstrap": "^4.2.2",
+    "@types/node": "^11.9.5",
     "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-e2e-cypress": "^3.4.0",
