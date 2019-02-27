@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './pages/Home.vue';
+import FullWidthLayout from '@/layouts/FullWidthLayout.vue';
+import HomePage from '@/pages/HomePage.vue';
 
 Vue.use(Router);
 
@@ -10,17 +11,25 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      // webpackChunkName: "about"
-      component: () => import('./pages/About.vue'),
+      component: FullWidthLayout,
+      children: [
+        {
+          path: 'home',
+          alias: '',
+          component: HomePage,
+          name: 'Home',
+          meta: { description: 'Overview of environment' },
+        },
+        {
+          path: '/about',
+          name: 'about',
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          // webpackChunkName: "about"
+          component: () => import('./pages/AboutPage.vue'),
+        },
+      ],
     },
   ],
 });
