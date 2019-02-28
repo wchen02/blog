@@ -2,10 +2,11 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import FullWidthLayout from '@/layouts/FullWidthLayout.vue';
 import HomePage from '@/pages/HomePage.vue';
+import NotFoundPage from '@/pages/NotFoundPage.vue';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -31,5 +32,20 @@ export default new Router({
         },
       ],
     },
+    {
+      path: '*',
+      name: 'not-found',
+      meta: {
+        title: '404 Page not found',
+      },
+      component: () => import('./pages/NotFoundPage.vue'),
+    },
   ],
 });
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next();
+});
+
+export default router;
