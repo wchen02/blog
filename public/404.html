@@ -18,6 +18,7 @@
         overflow: hidden;
         width: 100vw;
         height: 100vh;
+        font-family: sans-serif;
       }
       .not-found-page {
         color: #fff;
@@ -61,7 +62,7 @@
         z-index: 2;
       }
       
-      .router-link-active {
+      a {
         background-color: rgb( 255, 255, 255);
         position: relative;
         display: inline-block;
@@ -200,7 +201,7 @@
           <div class='error-emphasize'>THE PAGE</div>
           <div class='error-normal'>WAS NOT FOUND</div>
           <!-- <a class='btn' href='#'>BACK TO MARS</a> -->
-          <router-link to="/">BACK TO MARS</router-link>
+          <a href="/">BACK TO MARS</a>
         </div>
       </div>      
     </div>
