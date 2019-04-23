@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import FullWidthLayout from '@/layouts/FullWidthLayout.vue';
 import HomePage from '@/pages/HomePage.vue';
-import NotFoundPage from '@/pages/NotFoundPage.vue';
 
 Vue.use(Router);
 
